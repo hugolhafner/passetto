@@ -1,6 +1,8 @@
 syntax = "proto3";
 package com.hugolhafner.passetto;
 
+option go_package="github.com/hugolhafner/passetto/pkg/messages";
+
 message Collector {
   string version = 1;
   string domain = 2;
