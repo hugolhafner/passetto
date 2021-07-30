@@ -1,8 +1,0 @@
-syntax = "proto3";
-package com.hugolhafner.passetto;
-
-message MouseMovements {
-  int32 screenX = 1;
-  double screenY = 2;
-  string movements = 3;
-}

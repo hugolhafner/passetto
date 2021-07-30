@@ -1,0 +1,24 @@
+syntax = "proto3";
+package com.hugolhafner.passetto;
+
+message Collector {
+  string version = 1;
+  string domain = 2;
+}
+
+message Metadata {
+  int32 screenX = 1;
+  int32 screenY = 2;
+}
+
+message Movement {
+  int32 x = 1;
+  int32 y = 2;
+  int64 ts = 3;
+}
+
+message MouseMovements {
+  Collector collector = 1;
+  repeated Movement movements = 2;
+  Metadata metadata = 3;
+}
